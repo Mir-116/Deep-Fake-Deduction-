@@ -1,0 +1,79 @@
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# JavaScript / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.turbo/
+
+# Trained model checkpoints (distributed via Hugging Face Space / Git LFS, not git)
+*.keras
+*.h5
+models_store/
+
+# OpenCV DNN face detector files (auto-downloaded at runtime)
+models/deploy.prototxt
+models/res10_300x300_ssd_iter_140000.caffemodel
+deploy.prototxt
+res10_300x300_ssd_iter_140000.caffemodel
+
+# Datasets and heavy artifacts
+data/
+processed_dataset/
+preprocessed_new/
+Dataset/
+
+# Runtime output folders
+testing/
+temp_frames/
+temp_runtime_frames/
+temp_runtime_frames_v2/
+xai_outputs/
+xai_outputs_v2/
+temp_runtime/
+evaluation/eval_run.log
+backend/.jobs/
+training/runs/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.artifacts/
+e2e_test_media/
+backend_e2e.log
+frontend_e2e.log
+e2e_test_media/
+backend/.data/
+backend_p4*.log
+frontend_p4.log
+backend_v.log
+frontend_v.log
+hf_space/*.keras
+hf_space/deploy.prototxt
+hf_space/res10*
+hf_space/__pycache__
+hf_space/_test.pdf
+hf_space/deepfake_report_test.pdf
+_phase_c_validate.py
+_hf_audit.py
+_p5_hf_e2e.py
+hf_space_deploy/
